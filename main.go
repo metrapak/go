@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"main/slices"
 	"main/statements"
 )
 
@@ -25,4 +26,5 @@ func main() {
 	fmt.Println(split(17))
 	statements.TestFor()
 	statements.TestSwitch()
+	slices.TestSlice()
 }
