@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"main/closures"
 	"main/slices"
 	"main/statements"
 	"main/variadic_functions"
@@ -29,4 +30,12 @@ func main() {
 	statements.TestSwitch()
 	slices.TestSlice()
 	variadic_functions.Sum(1, 2, 3, 4, 5)
+
+	closuresFunc := closures.Seq()
+	fmt.Println(closuresFunc())
+	fmt.Println(closuresFunc())
+	fmt.Println(closuresFunc())
+
+	closuresFunc2 := closures.Seq()
+	fmt.Println(closuresFunc2())
 }
