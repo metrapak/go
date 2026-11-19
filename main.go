@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"main/slices"
 	"main/statements"
+	"main/variadic_functions"
 )
 
 var c, python, java bool
@@ -27,4 +28,5 @@ func main() {
 	statements.TestFor()
 	statements.TestSwitch()
 	slices.TestSlice()
+	variadic_functions.Sum(1, 2, 3, 4, 5)
 }
